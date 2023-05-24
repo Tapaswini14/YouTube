@@ -1,0 +1,147 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <button class="toggle" mat-icon-module style="border: none;">
+      <mat-icon (click)="sidenav.toggle();">menu</mat-icon>
+    </button>
+    <h2 class="ml-2"><img src="assets/yt logo1.png" class="img-fluid mr-2" width="38px" alt=""><b>YouTube <sup style="font-size: 13px;">IN</sup></b></h2>
+    <div class="form-group has-search">
+      <!-- <span class="fa fa-search form-control-feedback"></span> -->
+      <mat-icon class="mr-2 form-control-feedback border-right" aria-hidden="false" aria-label="Example search icon"
+        fontIcon="search">search</mat-icon>
+      <input type="text" class="form-control" placeholder="Search">
+    </div>
+    <div class="mic rounded-circle bg-secondary ml-2">
+      <mat-icon class="mr-3 p-2" aria-hidden="false" aria-label="Example mic icon" fontIcon="mic">mic</mat-icon>
+    </div>
+    <div class="navIcons mt-3 p-2">
+      <mat-icon class="m-1 newIcon" aria-hidden="false" aria-label="Example create_new_folder icon"
+        fontIcon="create_new_folder">create_new_folder</mat-icon>
+      <mat-icon matBadge="+3" class="m-2 newIcon" matBadgeColor="warn">notifications</mat-icon>
+      <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle p-1 mb-3" style="width: 40px;"
+        alt="Avatar" />
+    </div>
+
+  </mat-toolbar-row>
+  <mat-toolbar-row class="downBar">
+    <div class="container">
+      <div class="row">
+        <div class="col p-2 mt-2">
+          <div class="d-flex">
+            <div class="m-auto">
+              <a routerLink="/home" mat-list-item><mat-icon class="downIcons text-dark" aria-hidden="false"
+                  aria-label="Example home icon" fontIcon="home">home</mat-icon></a>
+            </div>
+          </div>
+        </div>
+        <div class="col p-2 mt-2">
+          <div class="d-flex">
+            <div class="m-auto">
+              <a routerLink="/shorts" mat-list-item><mat-icon class="downIcons text-dark" aria-hidden="false"
+                  aria-label="Example  camera_roll icon" fontIcon="camera_roll">camera_roll</mat-icon></a>
+            </div>
+          </div>
+        </div>
+        <div class="col p-2 mt-2">
+          <div class="d-flex">
+            <div class="m-auto">
+              <a routerLink="/shorts" mat-list-item><mat-icon class="downIcons text-dark" aria-hidden="false"
+                  aria-label="Example  add_circle_outline icon"
+                  fontIcon="add_circle_outline">add_circle_outline</mat-icon></a>
+            </div>
+          </div>
+        </div>
+        <div class="col p-2 mt-2">
+          <div class="d-flex">
+            <div class="m-auto">
+              <a routerLink="/subscriptions" mat-list-item><mat-icon class="downIcons text-dark" aria-hidden="false"
+                  aria-label="Example  subscriptions icon" fontIcon=" subscriptions">
+                  subscriptions</mat-icon></a>
+            </div>
+          </div>
+        </div>
+        <div class="col p-2 mt-2">
+          <div class="d-flex">
+            <div class="m-auto">
+              <a routerLink="/library" mat-list-item><mat-icon class="downIcons text-dark" aria-hidden="false"
+                  aria-label="Example video_library icon" fontIcon="video_library">video_library</mat-icon></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav class="side" opened="true" mode="side">
+    <mat-nav-list class="sidebar">
+      <a routerLink="/home" mat-list-item><mat-icon class="mr-3" aria-hidden="false" aria-label="Example home icon"
+          fontIcon="home">home</mat-icon>Home</a>
+      <a routerLink="/shorts" mat-list-item><mat-icon class="mr-3" aria-hidden="false"
+          aria-label="Example  camera_roll icon" fontIcon="camera_roll">camera_roll</mat-icon>Shorts</a>
+      <a routerLink="/subscriptions" mat-list-item><mat-icon class="mr-3" aria-hidden="false"
+          aria-label="Example  subscriptions icon" fontIcon=" subscriptions">
+          subscriptions</mat-icon>Subscriptions</a>
+      <hr>
+      <a routerLink="/library" mat-list-item><mat-icon class="mr-3" aria-hidden="false"
+          aria-label="Example video_library icon" fontIcon="video_library">video_library</mat-icon>Library</a>
+      <a routerLink="/history" mat-list-item><mat-icon class="mr-3" aria-hidden="false"
+          aria-label="Example  history icon" fontIcon=" history">history</mat-icon>History</a>
+      <a routerLink="/yourvideos" mat-list-item><mat-icon class="mr-3" aria-hidden="false"
+          aria-label="Example  play_circle_outline icon"
+          fontIcon=" play_circle_outline">play_circle_outline</mat-icon>Your Videos</a>
+      <a routerLink="/watchlater" mat-list-item><mat-icon class="mr-3" aria-hidden="false"
+          aria-label="Example  watch_later icon" fontIcon=" watch_later">watch_later</mat-icon>Watch Later</a>
+      <a routerLink="/likedvideos" mat-list-item><mat-icon class="mr-3" aria-hidden="false"
+          aria-label="Example  thumb_up icon" fontIcon=" thumb_up">thumb_up</mat-icon>Liked Videos</a>
+      <a mat-list-item><mat-icon class="mr-3" aria-hidden="false" aria-label="Example  keyboard_arrow_down icon"
+          fontIcon=" keyboard_arrow_down">keyboard_arrow_down</mat-icon> Shop More</a>
+      <hr>
+      <h2 class="ml-3">Subscriptions</h2>
+      <h3 class="p-1"><img src="assets/code.jpg" class="rounded-circle ml-1 mr-1" style="width: 30px;"
+          alt="Avatar" />Code Step By Step</h3>
+      <h3 class="p-1"><img src="assets/anubhav.jpg" class="rounded-circle ml-1 mr-1" style="width: 30px;"
+          alt="Avatar" />Anubhav Singh Bassi</h3>
+      <h3 class="p-1"><img src="assets/hum.jpg" class="rounded-circle ml-1 mr-1" style="width: 30px;" alt="Avatar" />HUM
+        TV</h3>
+      <a mat-list-item><mat-icon class="mr-3" aria-hidden="false" aria-label="Example  keyboard_arrow_down icon"
+          fontIcon=" keyboard_arrow_down">keyboard_arrow_down</mat-icon>Show 15 more</a>
+      <hr>
+      <h2 class="ml-3">Explore</h2>
+      <a mat-list-item><mat-icon class="mr-3" aria-hidden="false" aria-label="Example whatshot icon"
+          fontIcon="whatshot">whatshot</mat-icon>Trending</a>
+      <a mat-list-item><mat-icon class="mr-3" aria-hidden="false" aria-label="Example shop icon"
+          fontIcon="shop">shop</mat-icon>Shopping</a>
+      <a mat-list-item><mat-icon class="mr-3" aria-hidden="false" aria-label="Example music_note icon"
+          fontIcon="music_note">music_note</mat-icon>Music</a>
+      <a mat-list-item><mat-icon class="mr-3" aria-hidden="false" aria-label="Example movie icon"
+          fontIcon="movie">movie</mat-icon>Movies & Shows</a>
+      <hr>
+      <a mat-list-item><mat-icon class="mr-3" aria-hidden="false" aria-label="Example settings icon"
+          fontIcon="settings">settings</mat-icon>Settings</a>
+      <a mat-list-item><mat-icon class="mr-3" aria-hidden="false" aria-label="Example flag icon"
+          fontIcon="flag">flag</mat-icon>Report History</a>
+      <a mat-list-item><mat-icon class="mr-3" aria-hidden="false" aria-label="Example help_outline icon"
+          fontIcon="help_outline">help_outline</mat-icon>Help</a>
+      <a mat-list-item><mat-icon class="mr-3" aria-hidden="false" aria-label="Example feedback icon"
+          fontIcon="feedback">feedback</mat-icon>Send Feedback</a>
+      <hr>
+      <h4 class="ml-3">About Press Copyright <br>
+        Contact Us Creators <br>
+        Advertise Developers <br>
+      </h4>
+      <h4 class="ml-3">
+        Terms PrivacyPolicy <br>
+         & Safety <br> How YouTube  
+         works <br> Test new features
+      </h4>
+      <h5 class="ml-3">© 2023 Google LLC</h5>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div style="height: 100vh;">
+      <router-outlet>
+
+      </router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
